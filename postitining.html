@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Positioning in css how
+        </title>
+        <style>
+            body{
+                background-color:teal;
+            }
+            h1{
+                text-decoration: underline;
+                 color: blue;
+            }
+            div{
+                border: 5px solid red;
+                right: 30px;
+            }
+            div.sticky{
+                position: sticky;
+                left: 50px;
+                border: 5px solid yellow;
+            }
+            div.fixed{
+                position: fixed;
+                top: 0px;
+                right: 20px;
+                width: 300px;
+                border: 5px solid blue;
+            }
+            div.relative{
+                position: relative;
+                left: 50px;
+                border: 5px solid green;
+            }
+            div.absolute{
+                position: absolute;
+                right: 50px;
+                border: 5px solid silver;
+            }
+            div.static{
+                position: static;
+                right: 50px;
+                border: 5px solid gold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Welcome to positioning in css
+        </h1>
+        <div>
+            Div with no positioning property
+        </div>
+        <div class="sticky">
+            Div with sticky positioning in css
+        </div>
+        <div class="fixed">
+            Div with fixed positioning in css
+        </div>
+        <div class="relative">
+            Div with relative positioning in css
+        </div>
+        <div class="absolute">
+            Div with absolute positioning in css
+        </div>
+        <div class="static">
+            Div with static positioning in css
+        </div>
+    </body>
+</html>
