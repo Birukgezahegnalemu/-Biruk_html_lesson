@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            gird layout
+        </title>
+        <style>
+            h1{
+                text-decoration:underline;
+                color: red;
+            }
+            body{
+                background-color: greenyellow;
+            }
+            .gird-item1{
+                grid-area: header;
+            }   
+            .gird-item2{
+                grid-area: menu;
+            } 
+             .gird-item3{
+                grid-area: main;
+            }   
+             .gird-item4{
+                grid-area: footer;
+            }
+            .gird-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                grid-template-areas: 'header header header header header'
+                'menu main main main main'
+                'menu footer footer footer footer'; 
+                background-color: yellow; 
+                padding: 30px;             
+            } 
+            .gird-container div{
+                background-color: blue;
+                text-align: center;
+                padding: 20px;
+                border: 3px solid chocolate;
+            }    
+        </style>
+    </head> 
+    <body>
+        <h1>
+            welcome to gird layout
+        </h1>
+        <div class="gird-container">
+            <div class="gird-item1">
+                header
+            </div>
+            <div class="gird-item2">
+                menu
+            </div> 
+            <div class="gird-item3">
+                main
+            </div>
+            <div class="gird-item4">
+                footer
+            </div>
+        </div>
+    </body>
+</html>
